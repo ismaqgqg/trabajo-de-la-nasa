@@ -1,0 +1,37 @@
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.fila {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.fila:nth-child(odd) .imagen-circular {
+    order: 1;
+}
+.imagen-circular {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 15px;
+}
+.contenido {
+    flex-grow: 1;
+}
+.titulo-fila {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+.texto-fila {
+    font-size: 14px;
+    margin: 0;
+}
